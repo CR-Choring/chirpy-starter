@@ -1,0 +1,89 @@
+/* 桌面版样式 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.parent-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+}
+
+.audio-player {
+    display: flex;
+    align-items: flex-start; /* 从顶部开始对齐 */
+    width: 80%; /* 调整播放器容器的宽度 */
+    max-width: 1200px; /* 设置播放器容器的最大宽度 */
+    background-color: #fff;
+    padding: 80px; /* 容器四周内边距 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* 使容器在屏幕中居中 */
+}
+
+.audio-cover {
+    width: 40%; /* 设置插图宽度为容器的40% */
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* 插图与右边内容的间距 */
+}
+
+.audio-info {
+    display: block; /* 使信息区域成为块级元素 */
+    width: 60%; /* 设置信息区域宽度为容器的60% */
+}
+
+.audio-title {
+    font-size: 36px; /* 增加歌名字体大小 */
+    margin: 0 0 10px 0; /* 底部外边距 */
+}
+
+.audio-author {
+    font-size: 14px; /* 减小字体大小 */
+    color: #666;
+    margin: 0; /* 重置外边距 */
+}
+
+.controls,
+.progress-container,
+.volume-container {
+    display: block; /* 使控件成为块级元素 */
+    width: 100%;
+    margin-top: 20px; /* 顶部外边距 */
+}
+
+.btn {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px; /* 减小按钮内边距 */
+}
+
+.btn img {
+    width: 20px; /* 减小按钮图标大小 */
+    height: 20px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    margin: 0 5px; /* 减少进度条的边距 */
+}
+
+.volume-icon {
+    margin-right: 5px; /* 减少音量图标的右边距 */
+}
+
+.volume-bar {
+    flex-grow: 1;
+}
